@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.amb.photo_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00EEEE"
+        android:gravity="center"
+        android:text="更换头像"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+
+    <com.amb.photo_settings.CircleImageView
+        android:id="@+id/circleImageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/ic_photo"
+        app:border_color="#00B2EE"
+        app:border_width="2dp" />
+
+</RelativeLayout>

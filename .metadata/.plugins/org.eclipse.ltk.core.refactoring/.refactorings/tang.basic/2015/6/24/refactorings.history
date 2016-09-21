@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StringUtil.java&apos; to &apos;SidemenuLib/src/yalantis.com.sidemenu.util&apos;&#x0D;&#x0A;- Original project: &apos;tang.basic&apos;&#x0D;&#x0A;- Destination element: &apos;SidemenuLib/src/yalantis.com.sidemenu.util&apos;&#x0D;&#x0A;- Original element: &apos;tang.basic.common.StringUtil.java&apos;" description="Copy compilation unit" destination="=SidemenuLib/src&lt;yalantis.com.sidemenu.util" element1="/src&lt;tang.basic.common{StringUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1433667759988" units="1" version="1.0"/>
+</session>

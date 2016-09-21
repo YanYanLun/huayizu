@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_gary_f5f5f5"
+    android:orientation="vertical" >
+
+    <t3.lockscreen.widget.ClearEditText
+        android:id="@+id/clearEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:hint="请填写"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#B2B2B2"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="14dp"
+        android:background="#CCCCCC" />
+
+</LinearLayout>

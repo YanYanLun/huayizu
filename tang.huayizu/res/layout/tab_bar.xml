@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_tab"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="top"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.gc.materialdesign.views.RadioRipple
+        android:id="@+id/home"
+        style="@style/weibo_tab"
+        android:background="@color/background"
+        android:checked="true"
+        android:drawableTop="@drawable/weibolist_attention_selector"
+        android:gravity="center_vertical"
+        android:tag="0"
+        android:text="@null" />
+
+    <com.gc.materialdesign.views.RadioRipple
+        android:id="@+id/theme"
+        style="@style/weibo_tab"
+        android:background="@color/background"
+        android:drawableTop="@drawable/weibolist_atme_selector"
+        android:gravity="center_vertical"
+        android:tag="1"
+        android:text="@null" />
+
+    <com.gc.materialdesign.views.RadioRipple
+        android:id="@+id/pic"
+        style="@style/weibo_tab"
+        android:background="@color/background"
+        android:drawableTop="@drawable/weibolist_comment_selector"
+        android:gravity="center_vertical"
+        android:tag="2"
+        android:text="@null" />
+
+    <com.gc.materialdesign.views.RadioRipple
+        android:id="@+id/shop"
+        style="@style/weibo_tab"
+        android:background="@color/background"
+        android:drawableTop="@drawable/weibolist_mylist_selector"
+        android:gravity="center_vertical"
+        android:tag="3"
+        android:text="@null" />
+
+    <com.gc.materialdesign.views.RadioRipple
+        android:id="@+id/my"
+        style="@style/weibo_tab"
+        android:background="@color/background"
+        android:drawableTop="@drawable/weibolist_global_selector"
+        android:gravity="center_vertical"
+        android:tag="4"
+        android:text="@null" />
+
+</RadioGroup>

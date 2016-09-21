@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg01" >
+
+    <ScrollView
+        android:id="@+id/border_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel"
+        android:layout_margin="10dp"
+        android:background="@null" >
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/last"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#0099CB" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/image"
+                android:layout_toRightOf="@id/image"
+                android:text="上一题"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="#0099CB" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/image"
+                android:layout_toRightOf="@id/image"
+                android:text="下一题"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </com.gc.materialdesign.views.LayoutRipple>
+
+        <com.gc.materialdesign.views.LayoutRipple
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="#0099CB"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/image"
+                android:layout_toRightOf="@id/image"
+                android:text="提    交"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </com.gc.materialdesign.views.LayoutRipple>
+    </LinearLayout>
+
+</RelativeLayout>

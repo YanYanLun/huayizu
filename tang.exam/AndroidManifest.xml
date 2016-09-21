@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ximi.exam"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name="tang.exam.common.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBarStyle" >
+        <activity
+            android:name="tang.exam.activity.ActivityWelcome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityHome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityIndex"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityQuickList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityQuickDetailed"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityExam"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityReviseInfo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityOnlineRegistration"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityAddressChoose"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityTypeChoose"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="tang.exam.activity.ActivityExamAlone"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <service android:name="com.apk.update.DownloadService" />
+    </application>
+
+</manifest>
